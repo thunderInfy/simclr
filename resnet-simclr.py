@@ -216,16 +216,16 @@ if TSNEVIS:
     resnet.eval()
 
     for (_, sample_batched) in enumerate(dataloader_training_dataset):
-            x = sample_batched['image']
-            x = x.to(device)
-            y = resnet(x)
-            y_tsne = tsne.fit_transform(y.cpu().data)
-            labels = sample_batched['label']
-            plot_vecs_n_labels(y_tsne,labels,'tsne_train_last_layer.png')
-            x = None
-            y = None
-            y_tsne = None
-            sample_batched = None
+        x = sample_batched['image']
+        x = x.to(device)
+        y = resnet(x)
+        y_tsne = tsne.fit_transform(y.cpu().data)
+        labels = sample_batched['label']
+        plot_vecs_n_labels(y_tsne,labels,'tsne_train_last_layer.png')
+        x = None
+        y = None
+        y_tsne = None
+        sample_batched = None
 
     for (_, sample_batched) in enumerate(dataloader_testing_dataset):
         x = sample_batched['image']
@@ -240,31 +240,6 @@ if TSNEVIS:
         sample_batched = None
 
 resnet.fc = nn.Sequential(*list(resnet.fc.children())[:-2])
-
-if TSNEVIS:
-    for (_, sample_batched) in enumerate(dataloader_training_dataset):
-        x = sample_batched['image']
-        x = x.to(device)
-        y = resnet(x)
-        y_tsne = tsne.fit_transform(y.cpu().data)
-        labels = sample_batched['label']
-        plot_vecs_n_labels(y_tsne,labels,'tsne_train_second_last_layer.png')
-        x = None
-        y = None
-        y_tsne = None
-        sample_batched = None
-
-    for (_, sample_batched) in enumerate(dataloader_testing_dataset):
-        x = sample_batched['image']
-        x = x.to(device)
-        y = resnet(x)
-        y_tsne = tsne.fit_transform(y.cpu().data)
-        labels = sample_batched['label']
-        plot_vecs_n_labels(y_tsne,labels,'tsne_test_second_last_layer.png')
-        x = None
-        y = None
-        y_tsne = None
-        sample_batched = None
 
 LINEAR = True
 
