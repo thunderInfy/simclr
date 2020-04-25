@@ -1,4 +1,7 @@
 # simclr
+
+I used Google Colab for running this SimCLR code. Here is the Colab's notebook https://colab.research.google.com/drive/1YaLNsuaVeimgi-d473wk96wCD0BGecPd
+
 This repo contains code for SimCLR : A Simple Framework for Contrastive Learning of Visual Representations
 
 SimCLR paper : http://cse.iitkgp.ac.in/~arastogi/papers/simclr.pdf
