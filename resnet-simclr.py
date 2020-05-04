@@ -248,7 +248,8 @@ class LinearNet(nn.Module):
 
     def __init__(self):
         super(LinearNet, self).__init__()
-        self.fc1 = torch.nn.Linear(50, 5)
+        # self.fc1 = torch.nn.Linear(50, 5) 
+        self.fc1 = torch.nn.Linear(100, 25)
 
     def forward(self, x):
         x = self.fc1(x)
