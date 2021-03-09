@@ -92,7 +92,7 @@ We used the imagenet-5-categories dataset, which has a total of 1250 train and 2
 
 Test Accuracy: 68.00% (with projection head having 1 layer)
 
-Pretrained model with optimizer and loss file is present [here][4].
+Pretrained model (number of epochs: 200) with optimizer and loss file is present [here][4].
 
 
 ## References
