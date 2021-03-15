@@ -84,15 +84,15 @@ We used the imagenet-5-categories dataset, which has a total of 1250 train and 2
 
 |class|precision|recall|f1-score|support|
 |------|------|------|------|------|
-|car|0.8750|0.8400|0.8571|50|
-|airplane|0.7636|0.8400|0.8000|50|
-|elephant|0.7111|0.6400|0.6737|50|
-|dog|0.4746|0.5600|0.5138|50|
-|cat|0.6047|0.5200|0.5591|50|
+|car|0.8600|0.8600|0.8600|50|
+|airplane|0.7679|0.8600|0.8113|50|
+|elephant|0.7500|0.7200|0.7347|50|
+|dog|0.5345|0.6200|0.5741|50|
+|cat|0.7632|0.5800|0.6591|50|
 
-Test Accuracy: 68.00% (with projection head having 1 layer)
+Test Accuracy: 72.80% (with projection head having 2 layers)
 
-Pretrained model (number of epochs: 200) with optimizer and loss file is present [here][4].
+Pretrained model (number of epochs: 1000) with optimizer and loss file is present [here][4].
 
 
 ## References
