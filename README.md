@@ -112,4 +112,4 @@ SimCLR paper by Chen et. al:
 [1]:https://arxiv.org/pdf/2002.05709.pdf 
 [2]:https://medium.com/analytics-vidhya/understanding-simclr-a-simple-framework-for-contrastive-learning-of-visual-representations-d544a9003f3c?source=friends_link&sk=e768e4c2a88bd7d33f8eb42072b1fb05
 [3]:https://drive.google.com/file/d/1x3BSoqoe76FcWdbagLj6Mx6_2EAJ982g/view?usp=sharing
-[4]:https://drive.google.com/file/d/1qGgHvujtgIO8MQ8w35jCrraItLxZ8Kic/view?usp=sharing
+[4]:https://drive.google.com/drive/folders/1hXzJklDds662eHYxafwCLexIeBjby4uX?usp=sharing
